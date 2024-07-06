@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.content {
+  font-size: 20px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 400px;
+  line-height: 1.5;
+  > p {
+    margin: unset;
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.content p::-webkit-scrollbar {
+  display: none;
+}
+
+.nextButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
