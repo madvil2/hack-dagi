@@ -43,15 +43,13 @@ const Chatbot = () => {
 
         const userMessage = { text: input, user: true };
         setMessages((prevMessages) => [...prevMessages, userMessage]);
-
+        setInput('');
         const aiMessage = { text: '...', user: false };
         setMessages((prevMessages) => [...prevMessages, aiMessage]);
 
         const response = await chatWithGPT3(input);
         const newAiMessage = { text: response, user: false };
         setMessages((prevMessages) => [...prevMessages.slice(0, -1), newAiMessage]);
-
-        setInput('');
     };
 
     return (

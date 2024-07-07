@@ -25,6 +25,8 @@ const ProjectDetailsModal = ({ visible, project, onOk, onCancel }) => {
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                     <p><strong>Link:</strong> <a href={project.link} target="_blank" rel="noopener noreferrer">{project.link}</a></p>
+                    <p><strong>Wallet Address:</strong> {project.wallet_address}</p>
+                    <p><strong>Chain ID:</strong> {project.chain_id}</p>
                 </div>
             )}
         </Modal>

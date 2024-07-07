@@ -1,5 +1,5 @@
 export const getText = (func) => [
-  "In the vast and uncharted territory of the Web3 world, where the promise of decentralization and blockchain technology beckons explorers from all corners of the digital realm, a hero emerges to guide and protect: SafeWeb3",
+  "SafeWeb3 is dedicated to helping users navigate Web3 safely by providing advanced tools to identify scams, educate on potential risks, and discover legitimate projects, ensuring a secure and informed Web3 experience.",
   500,
   func,
 ];

@@ -1,123 +1,174 @@
 import logo from "../assets/app.png";
+import Allora from "../assets/images/logos/Allora.png";
+import Arbitrum from "../assets/images/logos/Arbitrum.png";
+import Avail from "../assets/images/logos/Avail.png";
+import Base from "../assets/images/logos/Base.png";
+import Blockscout from "../assets/images/logos/Blockscout.png";
+import Chainbase from "../assets/images/logos/Chainbase.png";
+import Chainlink from "../assets/images/logos/Chainlink.png";
+import Chronicle from "../assets/images/logos/Chronicle.png";
+import Circle from "../assets/images/logos/Circle.png";
+import Circles from "../assets/images/logos/Circles.png";
+import Corcel from "../assets/images/logos/Corcel.png";
+import ENS from "../assets/images/logos/ENS.png";
+import ETHFoundation from "../assets/images/logos/ETHFoundation.png";
+import Fhenix from "../assets/images/logos/Fhenix.png";
+import Filecoin from "../assets/images/logos/Filecoin.png";
+import Flare from "../assets/images/logos/Flare.png";
+import Galadriel from "../assets/images/logos/Galadriel.png";
+import GagraVentures from "../assets/images/logos/GagraVentures.png";
+import Graph from "../assets/images/logos/Graph.png";
+import Hyperlane from "../assets/images/logos/Hyperlane.png";
+import Inco from "../assets/images/logos/Inco.png";
+import INTMAX from "../assets/images/logos/INTMAX.png";
+import LayerZero from "../assets/images/logos/LayerZero.png";
+import LidoAlliance from "../assets/images/logos/LidoAlliance.png";
+import M31Capital from "../assets/images/logos/M31Capital.png";
+import Marlin from "../assets/images/logos/Marlin.png";
+import MBDxyz from "../assets/images/logos/MBDxyz.png";
+import MetaMask from "../assets/images/logos/MetaMask.png";
+import MistralAI from "../assets/images/logos/MistralAI.png";
+import NapthaAi from "../assets/images/logos/NapthaAi.png";
+import Near from "../assets/images/logos/Near.png";
+import NeonEVM from "../assets/images/logos/NeonEVM.png";
+import Nevermined from "../assets/images/logos/Nevermined.png";
+import Nillion from "../assets/images/logos/Nillion.png";
+import PancakeSwap from "../assets/images/logos/PancakeSwap.png";
+import Phala from "../assets/images/logos/Phala.png";
+import Polygon from "../assets/images/logos/Polygon.png";
+import Privy from "../assets/images/logos/Privy.png";
+import RobotVentures from "../assets/images/logos/RobotVentures.png";
+import Rootstock from "../assets/images/logos/Rootstock.png";
+import Safe from "../assets/images/logos/Safe.png";
+import Scroll from "../assets/images/logos/Scroll.png";
+import SeedClubVentures from "../assets/images/logos/SeedClubVentures.png";
+import Uniswap from "../assets/images/logos/Uniswap.png";
+import Vara from "../assets/images/logos/Vara.png";
+import WalletConnect from "../assets/images/logos/WalletConnect.png";
+import Web3Auth from "../assets/images/logos/Web3Auth.png";
+import Zircuit from "../assets/images/logos/Zircuit.png";
+import OneInch from "../assets/images/logos/1inch.png"; // 1inch.png is renamed to OneInch for a valid variable name
+import Pond from "../assets/images/logos/Pond.png";
 
 export const projects = [
     {
-        id: 1,
-        name: 'Ratio',
-        description: 'Embedded fiat payments for Web3 apps. Because UX matters.',
-        imageUrl: logo,
-        link: '#',
-        section: 'Trending'
-    },
-    {
-        id: 2,
-        name: 'Agora',
-        description: 'Make good governance your competitive advantage with Agora. Your best engineers should be working on your protocol. Use Agora to deploy the best end-to-end governance system without writing a single line of code.',
-        imageUrl: logo,
-        link: '#',
-        section: 'Trending'
-    },
-    {
-        id: 3,
-        name: 'ZeroLend',
-        description: 'ZeroLend is the most efficient and dominant lending market on Linea, zkSync, Blast and Manta.',
-        imageUrl: logo,
-        link: '#',
-        section: 'Trending'
-    },
-    {
         id: 4,
         name: 'Nevermined',
-        description: 'Description for Nevermined.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Nevermined Pay comes with everything you need to monetize your AI.',
+        tag: 'OK',
+        imageUrl: Nevermined,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://nevermined.app/',
         section: 'Our Choice'
     },
     {
         id: 5,
         name: 'NEAR',
-        description: 'Description for NEAR.',
-        imageUrl: logo,
-        link: '#',
+        description: 'NEAR is the chain abstraction stack, empowering builders to create apps that scale to billions of users and across all blockchains.',
+        tag: 'OK',
+        imageUrl: Near,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://near.org/',
         section: 'Our Choice'
     },
     {
         id: 6,
         name: 'Phala Network',
-        description: 'Description for Phala Network.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Phala Network, an off-chain compute network powered by Secure Enclaves, can be utilized to build the MEV core stack with minimal trust assumptions.',
+        tag: 'OK',
+        imageUrl: Phala,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://phala.network/',
         section: 'Our Choice'
     },
     {
         id: 7,
         name: 'Corcel',
-        description: 'Description for Corcel.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Build your AI-powered apps more quickly and with less cost with the power of decentralized AI, with Corcel\'s global infrastructure.',
+        tag: 'OK',
+        imageUrl: Corcel,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://corcel.io/',
         section: 'Our Choice'
     },
     {
         id: 8,
         name: 'Naptha AI',
-        description: 'Description for Naptha AI.',
-        imageUrl: logo,
-        link: '#',
+        description: 'An LLM Workflow Orchestration Engine that supports async messaging for running workflow steps on different nodes.',
+        tag: 'OK',
+        imageUrl: NapthaAi,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://www.naptha.ai/',
         section: 'Our Choice'
     },
     {
         id: 9,
         name: 'Marlin',
-        description: 'Description for Marlin.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Your decentralized AI model.',
+        tag: 'OK',
+        imageUrl: Marlin,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://www.marlin.org/ai',
         section: 'Our Choice'
     },
     {
         id: 10,
         name: 'MBD.XYZ',
-        description: 'Description for MBD.XYZ.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Integrate AI that predicts user interactions and create personalized feeds of social media posts.',
+        tag: 'OK',
+        imageUrl: MBDxyz,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://www.mbd.xyz/',
         section: 'Our Choice'
     },
     {
         id: 11,
         name: 'Allora',
-        description: 'Description for Allora.',
-        imageUrl: logo,
-        link: '#',
+        description: 'The Allora network aims to democratize access to advanced AI, empowering communities worldwide with cutting-edge, context-aware intelligence.',
+        tag: 'OK',
+        imageUrl: Allora,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://allora.ai/',
         section: 'Our Choice'
     },
     {
         id: 12,
         name: 'Galadriel',
-        description: 'Description for Galadriel.',
-        imageUrl: logo,
-        link: '#',
+        description: 'Like Ethereum enabled building dApps, Galadriel enables developers to build AI apps and agents through smart contracts - decentralized and on-chain.',
+        tag: 'OK',
+        imageUrl: Galadriel,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://galadriel.com/',
         section: 'Our Choice'
     },
     {
         id: 13,
         name: 'Pond',
-        description: 'Description for Pond.',
-        imageUrl: logo,
-        link: '#',
+        description: 'A new frontier in web3 investment powered by Pond\'s crypto foundation model, built by renowned network scientist and machine learning expert.',
+        tag: 'OK',
+        imageUrl: Pond,
+        wallet_address: 'None',
+        chain_id: 'None',
+        link: 'https://cryptopond.xyz/',
         section: 'Our Choice'
     },
     {
         id: 14,
         name: 'LayerZero',
         description: 'Description for LayerZero.',
-        imageUrl: logo,
-        link: '#',
-        section: 'Trending'
-    },
-    {
-        id: 15,
-        name: 'Worldcoin',
-        description: 'Description for Worldcoin.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: LayerZero,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -125,7 +176,10 @@ export const projects = [
         id: 16,
         name: 'Uniswap',
         description: 'Description for Uniswap Foundation.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Uniswap,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -133,7 +187,10 @@ export const projects = [
         id: 17,
         name: 'Blockscout',
         description: 'Description for Blockscout.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Blockscout,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -141,7 +198,10 @@ export const projects = [
         id: 18,
         name: 'Filecoin',
         description: 'Description for Filecoin.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Filecoin,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -149,7 +209,10 @@ export const projects = [
         id: 19,
         name: 'Polygon',
         description: 'Description for Polygon.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Polygon,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -157,7 +220,10 @@ export const projects = [
         id: 20,
         name: 'PancakeSwap',
         description: 'Description for PancakeSwap.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: PancakeSwap,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -165,7 +231,10 @@ export const projects = [
         id: 21,
         name: 'Arbitrum',
         description: 'Description for Arbitrum.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Arbitrum,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -173,7 +242,10 @@ export const projects = [
         id: 22,
         name: 'Avail',
         description: 'Description for Avail.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Avail,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -181,7 +253,10 @@ export const projects = [
         id: 23,
         name: 'Safe',
         description: 'Description for Safe.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Safe,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -189,7 +264,10 @@ export const projects = [
         id: 24,
         name: 'Nethermind',
         description: 'Description for Nethermind.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -197,7 +275,10 @@ export const projects = [
         id: 26,
         name: 'Chronicle',
         description: 'Description for Chronicle Protocol.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Chronicle,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -205,7 +286,10 @@ export const projects = [
         id: 27,
         name: 'Flare',
         description: 'Description for Flare Network.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Flare,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -213,7 +297,10 @@ export const projects = [
         id: 28,
         name: 'Pyth',
         description: 'Description for Pyth Network.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -221,7 +308,10 @@ export const projects = [
         id: 29,
         name: 'Dynamic',
         description: 'Description for Dynamic.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -229,7 +319,10 @@ export const projects = [
         id: 30,
         name: 'ENS',
         description: 'Description for ENS.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: ENS,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -237,7 +330,10 @@ export const projects = [
         id: 31,
         name: 'ApeCoin',
         description: 'Description for ApeCoin.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -245,7 +341,10 @@ export const projects = [
         id: 32,
         name: 'Celo',
         description: 'Description for Celo.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -253,7 +352,10 @@ export const projects = [
         id: 33,
         name: 'Inco',
         description: 'Description for Inco Network.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Inco,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -261,7 +363,10 @@ export const projects = [
         id: 34,
         name: 'Zircuit',
         description: 'Description for Zircuit.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Zircuit,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -269,7 +374,10 @@ export const projects = [
         id: 35,
         name: '1inch',
         description: 'Description for 1inch.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: OneInch,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -277,7 +385,10 @@ export const projects = [
         id: 36,
         name: 'The Graph',
         description: 'Description for The Graph.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Graph,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -285,7 +396,10 @@ export const projects = [
         id: 37,
         name: 'Chainlink',
         description: 'Description for Chainlink.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Chainlink,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -293,7 +407,10 @@ export const projects = [
         id: 38,
         name: 'Hyperlane',
         description: 'Description for Hyperlane.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Hyperlane,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -301,7 +418,10 @@ export const projects = [
         id: 39,
         name: 'Base',
         description: 'Description for Base.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Base,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -309,7 +429,10 @@ export const projects = [
         id: 40,
         name: 'Morph',
         description: 'Description for Morph.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -317,7 +440,10 @@ export const projects = [
         id: 41,
         name: 'Circle',
         description: 'Description for Circle.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Circle,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -325,7 +451,10 @@ export const projects = [
         id: 42,
         name: 'Zerion',
         description: 'Description for Zerion.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -333,7 +462,10 @@ export const projects = [
         id: 43,
         name: 'Rootstock',
         description: 'Description for Rootstock.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Rootstock,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -341,7 +473,10 @@ export const projects = [
         id: 44,
         name: 'Scroll',
         description: 'Description for Scroll.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Scroll,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -349,7 +484,10 @@ export const projects = [
         id: 45,
         name: 'Circles',
         description: 'Description for Circles.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Circles,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -357,7 +495,10 @@ export const projects = [
         id: 46,
         name: 'Web3Auth',
         description: 'Description for Web3Auth.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Web3Auth,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -365,7 +506,10 @@ export const projects = [
         id: 47,
         name: 'Ethereum',
         description: 'Description for Ethereum Foundation.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: ETHFoundation,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -373,7 +517,10 @@ export const projects = [
         id: 48,
         name: 'Fhenix',
         description: 'Description for Fhenix.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Fhenix,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -381,7 +528,10 @@ export const projects = [
         id: 49,
         name: 'Nillion',
         description: 'Description for Nillion.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Nillion,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -389,7 +539,10 @@ export const projects = [
         id: 50,
         name: 'Neon EVM',
         description: 'Description for Neon EVM.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: NeonEVM,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -397,7 +550,10 @@ export const projects = [
         id: 51,
         name: 'INTMAX',
         description: 'Description for INTMAX.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: INTMAX,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -405,7 +561,10 @@ export const projects = [
         id: 52,
         name: 'WalletConnect',
         description: 'Description for WalletConnect.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: WalletConnect,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -413,7 +572,8 @@ export const projects = [
         id: 53,
         name: 'MetaMask',
         description: 'Description for MetaMask & Linea.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: MetaMask,
         link: '#',
         section: 'Trending'
     },
@@ -421,7 +581,10 @@ export const projects = [
         id: 54,
         name: 'NounsDAO',
         description: 'Description for NounsDAO.',
+        tag: 'OK',
         imageUrl: logo,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -429,7 +592,10 @@ export const projects = [
         id: 55,
         name: 'Vara',
         description: 'Description for Vara.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Vara,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     },
@@ -437,7 +603,10 @@ export const projects = [
         id: 56,
         name: 'Privy',
         description: 'Description for Privy.',
-        imageUrl: logo,
+        tag: 'OK',
+        imageUrl: Privy,
+        wallet_address: 'None',
+        chain_id: 'None',
         link: '#',
         section: 'Trending'
     }

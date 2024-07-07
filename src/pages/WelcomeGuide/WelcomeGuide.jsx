@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./styles.module.scss";
 import background from "../../assets/images/papirus.png";
 import { getText } from "./constants";
-import Button from "../../components/common/Button/Button";
 
 const WelcomeGuide = ({ goNext }) => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -13,22 +12,31 @@ const WelcomeGuide = ({ goNext }) => {
   };
 
   const text = getText(() => handleAnimationComplete());
+
+  useEffect(() => {
+    if (isAnimationComplete) {
+      const handleClick = () => {
+        goNext();
+      };
+
+      window.addEventListener("click", handleClick);
+      return () => {
+        window.removeEventListener("click", handleClick);
+      };
+    }
+  }, [isAnimationComplete, goNext]);
+
   return (
-    <div
-      style={{
-        backgroundImage: `url(${background})`,
-      }}
-      className={styles.wrapper}
-    >
-      <div className={styles.content}>
-        <TypeAnimation sequence={text} speed={99} wrapper="p" repeat={0} />
-        {isAnimationComplete && (
-          <Button className={styles.nextButton} onClick={goNext}>
-            Continue...
-          </Button>
-        )}
+      <div
+          className={styles.wrapper}
+      >
+        <div className={styles.content}>
+          <TypeAnimation sequence={text} speed={99} wrapper="p" repeat={0} />
+          {isAnimationComplete && (
+              <div className={styles.continueMessage}>To continue, press anything...</div>
+          )}
+        </div>
       </div>
-    </div>
   );
 };
 

@@ -5,16 +5,22 @@
   padding: 50px;
   background-size: cover;
   background-position: center;
+  background-color: #000; /* Dark background color */
+  color: #0f0; /* Green text color */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
 }
 
-
 .content {
-  font-size: 20px;
-  font-family: monospace;
+  font-size: 18px; /* Adjusted for a terminal-like size */
   white-space: pre-wrap;
+  height: 80%;
   word-wrap: break-word;
-  max-width: 400px;
   line-height: 1.5;
+  background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow effect */
+
   > p {
     margin: unset;
     height: 100%;
@@ -28,8 +34,9 @@
   display: none;
 }
 
-.nextButton {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+.continueMessage {
+  margin-top: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: #0f0; /* Green text color */
 }

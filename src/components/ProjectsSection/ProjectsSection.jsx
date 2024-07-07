@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import { Carousel } from 'antd';
 import styles from './styles.module.scss';
 import { projects } from '../../utils/constants';
-import ProjectDetailsModal from "../ProjectDetailsModal/ProjectDetailsModal"; // Adjust the import path as necessary
+import ProjectDetailsModal from '../ProjectDetailsModal/ProjectDetailsModal';
+import {useNavigate} from "react-router-dom"; // Adjust the import path as necessary
+import paths from "../../pages/paths";
 
 const ProjectsSection = ({ title, section }) => {
+    const navigate = useNavigate();
+    const handleNavigate = (path) => {
+        navigate(path);
+    };
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -40,7 +46,12 @@ const ProjectsSection = ({ title, section }) => {
 
     return (
         <section className={styles.projectsSection}>
-            <h2 className={styles.title}>{title}</h2>
+            <div className={styles.header}>
+                <h2 className={styles.title}>{title}</h2>
+                <button className={styles.showAll} onClick={() => handleNavigate(paths.projects)}>
+                    See all
+                </button>
+            </div>
             <Carousel
                 arrows
                 infinite={false}
