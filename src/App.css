@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upgrade-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.plan {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detects {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.progress {
+  background-color: #76c7c0;
+  height: 100%;
+}
+
+.detects-text, .detects-percentage {
+  margin-bottom: 5px;
+}
+
+.blocked {
+  font-size: 18px;
+}
+
+.blocked-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.decrease-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.decrease-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.decrease-button:active {
+  animation: click-animation 0.2s ease;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.info-content {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+}
