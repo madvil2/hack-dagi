@@ -1,8 +1,12 @@
 .navbar {
-  background: black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .ios {
   padding-bottom: 30px;
@@ -11,14 +15,17 @@
 .menuItem {
   flex: 1;
   padding: 10px;
-  background: black;
-  color: white;
+  //background: #D3D2D2;
+  color: #999999;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  //border: 1px solid #D3D2D2;
   text-align: center;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.menuItem.selected {
+  color: #ffffff;
+}

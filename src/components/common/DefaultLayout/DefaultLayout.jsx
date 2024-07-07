@@ -4,10 +4,9 @@ import NavBar from "../NavBar/NavBar";
 import WelcomeGuide from "../../../pages/WelcomeGuide/WelcomeGuide";
 import { useSelector } from "react-redux";
 import cx from "classnames";
-import game_background from "../../../assets/images/layout/background-one.webp";
 
 const DefaultLayout = ({ children }) => {
-  const [isFirstTime, setIsFirstTime] = useState(false);
+  const [isFirstTime, setIsFirstTime] = useState(true);
 
   const telegramData = useSelector((state) => state.telegram.telegramData);
 
@@ -24,7 +23,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
       <div
-        style={{ backgroundImage: `url(${game_background})` }}
+        style={{ backgroundColor: `#D3D2D2` }}
         className={cx(styles.wrapper, { [styles.ios]: isIos })}
       >
         {children}

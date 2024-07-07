@@ -1,59 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { useNavigate } from "react-router-dom";
 import paths from "../../../pages/paths";
 import cx from "classnames";
-import { IoHomeOutline, IoPeopleOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
-import { GiTrophyCup } from "react-icons/gi";
-import { MdLocalGroceryStore } from "react-icons/md";
-import { FaTasks } from "react-icons/fa";
+import { FaRocketchat } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+import { VscReport } from "react-icons/vsc";
+import { SlBookOpen } from "react-icons/sl";
 
 const NavBar = () => {
-  const navigate = useNavigate();
-  const telegramData = useSelector((state) => state.telegram.telegramData);
-  const isIos = telegramData?.platform === "ios";
-  const isWeb =
-    telegramData?.platform === "macos" || telegramData?.platform === "web";
+    const navigate = useNavigate();
+    const telegramData = useSelector((state) => state.telegram.telegramData);
+    const isIos = telegramData?.platform === "ios";
+    const isWeb = telegramData?.platform === "macos" || telegramData?.platform === "web";
 
-  const handleNavigate = (path) => {
-    navigate(path);
-  };
+    const [selected, setSelected] = useState(paths.index);
 
-  return (
-    <div className={cx(styles.navbar, { [styles.ios]: isIos })}>
-      <div
-        onClick={() => handleNavigate(paths.index)}
-        className={styles.menuItem}
-      >
-        <IoHomeOutline size={isWeb ? 30 : 50} />
-      </div>
-      <div
-        onClick={() => handleNavigate(paths.quests)}
-        className={styles.menuItem}
-      >
-        <FaTasks size={isWeb ? 30 : 50} />
-      </div>
-      <div
-        onClick={() => handleNavigate(paths.store)}
-        className={styles.menuItem}
-      >
-        <MdLocalGroceryStore size={isWeb ? 30 : 50} />
-      </div>
-      <div
-        onClick={() => handleNavigate(paths.rating)}
-        className={styles.menuItem}
-      >
-        <GiTrophyCup size={isWeb ? 30 : 50} />
-      </div>
-      <div
-        onClick={() => handleNavigate(paths.referral)}
-        className={styles.menuItem}
-      >
-        <IoPeopleOutline size={isWeb ? 30 : 50} />
-      </div>
-    </div>
-  );
+    const handleNavigate = (path) => {
+        setSelected(path);
+        navigate(path);
+    };
+
+    return (
+        <div className={cx(styles.navbar, { [styles.ios]: isIos })}>
+            <div
+                onClick={() => handleNavigate(paths.index)}
+                className={cx(styles.menuItem, { [styles.selected]: selected === paths.index })}
+            >
+                <GrProjects size={isWeb ? 30 : 50} />
+            </div>
+            <div
+                onClick={() => handleNavigate(paths.chat)}
+                className={cx(styles.menuItem, { [styles.selected]: selected === paths.chat })}
+            >
+                <FaRocketchat size={isWeb ? 30 : 50} />
+            </div>
+            <div
+                onClick={() => handleNavigate(paths.study)}
+                className={cx(styles.menuItem, { [styles.selected]: selected === paths.study })}
+            >
+                <SlBookOpen size={isWeb ? 30 : 50} />
+            </div>
+            <div
+                onClick={() => handleNavigate(paths.contribute)}
+                className={cx(styles.menuItem, { [styles.selected]: selected === paths.contribute })}
+            >
+                <VscReport size={isWeb ? 30 : 50} />
+            </div>
+        </div>
+    );
 };
 
 export default NavBar;

@@ -1,8 +1,9 @@
 const paths = {
   index: "/",
-  tasks: "/tasks",
+  chat: "/chat",
+  contribute: "/contribute",
+  study: "/study",
   settings: "/settings",
-  about: "/about",
-  info: "/info",
-};
+  projects: "/projects",
+  };
 export default paths;

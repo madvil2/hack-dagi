@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
+// import { useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import DefaultLayout from "../components/common/DefaultLayout/DefaultLayout";
 import routesConfig from "../utils/routesConfig";
-import { axiosInstance } from "../services/axiosService";
+// import { axiosInstance } from "../services/axiosService";
 
 const Platform = () => {
   // useEffect(() => {

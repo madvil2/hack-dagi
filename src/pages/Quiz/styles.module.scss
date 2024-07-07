@@ -1,0 +1,42 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.quizContainer {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Ensure that the navbar has a specific height and adjust the top margin of the content */
+.navbar {
+  height: 60px; /* Example height, adjust based on your navbar */
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 60px; /* Same as the navbar height */
+}
+
+/* Additional styling for the quiz component to ensure it fits well */
+.quiz-container {
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
