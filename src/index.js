@@ -6,7 +6,6 @@ import { Provider, useDispatch } from "react-redux";
 import { store } from "./store/store";
 import App from "./App";
 import { setTelegramData } from "./store/slices/telegramSlice";
-import paths from "./pages/paths";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,13 +34,6 @@ const InitApp = () => {
           viewportStableHeight: tg.viewportStableHeight,
         };
         dispatch(setTelegramData(data));
-
-        if (tg.SettingsButton) {
-          tg.SettingsButton.show();
-          tg.SettingsButton.onClick(() => {
-            window.location.pathname = paths.settings;
-          });
-        }
 
         tg.onEvent("web_app_close", () => {
           const confirmed = window.confirm(

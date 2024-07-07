@@ -1,0 +1,50 @@
+.projectListContainer {
+  padding: 16px;
+  width: 100%;
+  height: 86%;
+  overflow: auto;
+  border: 1px solid rgba(140, 140, 140, 0.35);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333; /* Divider similar to the screenshot */
+  padding: 10px 0;
+}
+
+.projectImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 15%; /* Slightly rounded corners */
+}
+
+.projectName {
+  font-size: 16px;
+  color: #fff;
+}
+
+.projectDescription {
+  color: #999; /* Gray text for project description */
+  font-size: 14px;
+}
+
+.downloadButton {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Rounded button */
+  width: 80px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

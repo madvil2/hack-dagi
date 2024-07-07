@@ -24,7 +24,7 @@ const WelcomeGuide = ({ goNext }) => {
         <TypeAnimation sequence={text} speed={99} wrapper="p" repeat={0} />
         {isAnimationComplete && (
           <Button className={styles.nextButton} onClick={goNext}>
-            Продолжить
+            Continue...
           </Button>
         )}
       </div>
